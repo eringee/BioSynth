@@ -31,11 +31,12 @@ void receiveMessages() {
       
 
 
-    } else if ( msg.fullMatch("crusher") ) {
+    } /*else if ( msg.fullMatch("crusher") ) {
       bitcrusher1.bits(msg.nextInt());
       bitcrusher1.sampleRate(msg.nextInt());
 
-    } else if ( msg.fullMatch("string") ) {
+    } */
+      else if ( msg.fullMatch("string") ) {
       string1.noteOn(msg.nextFloat(), msg.nextFloat());
 
     } else if ( msg.fullMatch("drum") ) {      //Want to permanently set parameters of the drum

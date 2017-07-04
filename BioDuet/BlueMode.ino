@@ -1,8 +1,8 @@
 void setupBlueMode() {
   arp.setBpm(bpm);
 
-  bitcrusher1.bits(16);
-  bitcrusher1.sampleRate(44100);
+/*  bitcrusher1.bits(16);
+  bitcrusher1.sampleRate(44100);*/
 
   bassnote.amplitude(0);
   noise.amplitude(0);

@@ -15,8 +15,8 @@ void processHeart() {
   heartSensorBpmLopValueMinMax.adapt(0.001);
   
   msg.beginPacket("heart");
-  msg.addFloat( heartSensorReading );
-  msg.addFloat( heartSensorFiltered );
+ // msg.addFloat( heartSensorReading );
+ // msg.addFloat( heartSensorFiltered );
   msg.addFloat( heartSensorAmplitudeLopValueMinMaxValue);
   msg.addFloat( heartSensorBpmLopValueMinMaxValue );
   msg.endPacket();
@@ -29,16 +29,7 @@ void processHeart() {
 
     if ( temporaryBpm > 30 && temporaryBpm < 200 ) {
 
-      
-
       bpm = temporaryBpm;
-
- 
-
-
-
-
-
       msg.beginPacket("beat");
       msg.addFloat(bpm);
       msg.addFloat(heartSensorAmplitude);

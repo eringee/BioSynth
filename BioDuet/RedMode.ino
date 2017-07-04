@@ -1,7 +1,7 @@
 void setupRedMode() {
 
-bitcrusher1.bits(16);
-bitcrusher1.sampleRate(44100);
+/*bitcrusher1.bits(16);
+bitcrusher1.sampleRate(44100);*/
 
 bassnote.amplitude(0);
 noise.amplitude(0);
@@ -122,13 +122,13 @@ void runRedMode() {
     else if (gsrStage1) arp.setDivision(4);
     else arp.setDivision(3);
 
-    if ((heartSensorAmplitudeLopValueMinMaxValue * 1.5) > 5.5) bitcrusher1.sampleRate(44100);
+ /*   if ((heartSensorAmplitudeLopValueMinMaxValue * 1.5) > 5.5) bitcrusher1.sampleRate(44100);
     else if ((heartSensorAmplitudeLopValueMinMaxValue * 1.5) < 5.5) bitcrusher1.sampleRate(9000);
     else if ((heartSensorAmplitudeLopValueMinMaxValue * 1.5) < 5) bitcrusher1.sampleRate(6000);
     else if ((heartSensorAmplitudeLopValueMinMaxValue * 1.5) < 4) bitcrusher1.sampleRate(4000);
     else if ((heartSensorAmplitudeLopValueMinMaxValue * 1.5) < 3) bitcrusher1.sampleRate(2000);
     else if ((heartSensorAmplitudeLopValueMinMaxValue * 1.5) < 2) bitcrusher1.sampleRate(1000);
-    else if ((heartSensorAmplitudeLopValueMinMaxValue * 1.5) < 1) bitcrusher1.sampleRate(200);
+    else if ((heartSensorAmplitudeLopValueMinMaxValue * 1.5) < 1) bitcrusher1.sampleRate(200);*/
   } //end box 1
 
   if(box == 2) {
